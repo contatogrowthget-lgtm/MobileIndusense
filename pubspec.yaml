@@ -1,0 +1,59 @@
+name: indusense
+description: InduSense - Monitoramento Ambiental Industrial (Growth Get)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Estado da aplicação
+  provider: ^6.1.2
+
+  # Rede / API
+  http: ^1.2.1
+
+  # Persistência local (sessão / token)
+  shared_preferences: ^2.5.5
+
+  # Gráficos do histórico
+  fl_chart: ^0.68.0
+
+  # Formatação de datas em pt-BR (atualizado para corresponder ao SDK)
+  intl: ^0.20.2
+
+  # Leitura de tags NFC fixadas na porta das salas
+  nfc_manager: ^4.2.1
+  nfc_manager_ndef: ^1.1.0
+
+  # Foto do perfil: câmera/galeria + recorte e compressão
+  image_picker: ^1.1.2
+  image: ^4.2.0
+
+  # Login social
+  google_sign_in: ^6.2.2
+  sign_in_with_apple: ^6.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1 # Adicionado para gerenciamento do ícone
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+    - assets/images/
+
+# Configuração para geração automática dos ícones nativos
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png" # Certifique-se de salvar sua imagem neste caminho
